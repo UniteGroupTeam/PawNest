@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NuttyWear – Daily Nutty | Streetwear de Leche de Nuez CDMX</title>
+  <meta name="description" content="NuttyWear | Leche de nuez que te vistes. Drops limitados CDMX." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#000D1A" />
+  <script type="module" crossorigin src="/assets/index-VQCXfj1O.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-R1lPoKuw.css">
+</head>
+<body>
+  <!-- GRAIN OVERLAY -->
+  <div class="grain-overlay"></div>
+
+  <!-- THREEJS BACKGROUND -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <img src="/assets/images/logo.png" alt="Nutty" class="loader-logo" />
+    <div style="font-weight:900; letter-spacing:8px; margin-top:30px;">NUTTY LOADING...</div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">NUTTY.</a>
+      <div style="display:flex; align-items:center; gap:40px;">
+        <div id="cartTrigger" style="cursor:pointer; font-weight:900;">
+          [ CART <span id="cartCount">0</span> ]
+        </div>
+        <div id="menuToggle" style="cursor:pointer; font-weight:900; background:#fff; color:#000; padding:10px 20px;">MENU</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SIDE PANEL (MENU) -->
+  <div id="mobileMenu" class="side-panel">
+    <div style="position:absolute; top:40px; right:5% ; cursor:pointer; font-size:2rem;" id="closeMenu">✕</div>
+    <a href="#hero">HOME</a>
+    <a href="#catalog">SHOP</a>
+    <a href="#drops">DROPS</a>
+    <a href="#">MANIFESTO</a>
+  </div>
+
+  <!-- SIDE PANEL (CART) -->
+  <div id="cartModal" class="side-panel">
+    <div style="width:100%; max-width:600px; padding:0 5%;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:60px;">
+        <h2 style="font-size:3rem; font-weight:900;">CART.</h2>
+        <div id="closeCart" style="cursor:pointer; font-size:1.5rem;">CLOSE</div>
+      </div>
+      <div id="cartItems" style="min-height:300px; margin-bottom:40px;">
+        <p style="opacity:0.3;">EMPTY.</p>
+      </div>
+      <div style="border-top:1px solid #fff; padding-top:40px;">
+        <div style="display:flex; justify-content:space-between; font-size:2rem; font-weight:900; margin-bottom:40px;">
+          <span>TOTAL</span>
+          <span id="cartTotal">$0</span>
+        </div>
+        <button class="btn btn-white" style="width:100%; margin:0;">CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div id="hero-canvas" class="hero-canvas"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="outline">NUTTY</span>
+        <span>WEAR</span>
+      </h1>
+      <p style="font-size:1.1rem; letter-spacing:5px; margin-bottom:40px; font-weight:900;">DAILY NUTTY CDMX EDITION #001</p>
+      <div class="hero-cta">
+        <a href="#catalog" class="btn btn-white">SHOP NOW</a>
+        <a href="#drops" class="btn btn-outline">THE DROP</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <div class="section-header" id="catalog">
+    <h2 class="section-title">COLLECTION #001</h2>
+  </div>
+  <section class="product-grid" id="productGrid">
+    <!-- Injected via JS -->
+  </section>
+
+  <!-- DROPS -->
+  <section id="drops" class="drops-container">
+    <h2 class="section-title" style="color:var(--blue-night)">THE DROP.</h2>
+    <p style="font-size:1.2rem; max-width:600px; margin-top:20px; font-weight:600;">ONLY 100 PIECES MANUFACTURED. EVERY PIECE INCLUDES A PHYSICAL COLLECTIBLE CAP.</p>
+    
+    <div class="progress-container">
+      <div id="dropProgress" class="progress-bar"></div>
+    </div>
+    
+    <div style="font-weight:900; font-size:1.5rem; letter-spacing:4px; margin-bottom:60px;">
+      <span id="soldCount">0</span> / 100 PIECES SECURED
+    </div>
+
+    <div style="font-weight:900; font-size:3rem;" id="timer">00:00:00:00</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="/assets/images/logo.png" style="width:120px; filter:invert(1); margin-bottom:60px;" />
+    <div style="margin-bottom:60px;">
+      <a href="#" style="color:#fff; text-decoration:none; margin:0 30px; font-weight:900; letter-spacing:2px;">INTAGRAM</a>
+      <a href="#" style="color:#fff; text-decoration:none; margin:0 30px; font-weight:900; letter-spacing:2px;">WHATSAPP</a>
+    </div>
+    <p style="opacity:0.3; font-size:0.8rem; letter-spacing:2px;">© 2026 NUTTYWEAR / CDMX STREET PRIVILEGE.</p>
+  </footer>
+
+</body>
+</html>

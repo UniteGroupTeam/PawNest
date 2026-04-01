@@ -1,0 +1,22 @@
+{
+  "name": "NuttyWear – Daily Nutty Streetwear",
+  "short_name": "NuttyWear",
+  "description": "Leche de nuez que te vistes. Drops limitados CDMX.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000D1A",
+  "theme_color": "#000D1A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
